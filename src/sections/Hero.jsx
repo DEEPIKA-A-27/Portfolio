@@ -48,12 +48,12 @@ export default function Hero() {
 
   const handleDownload = () => {
     confetti({ particleCount: 90, spread: 65, origin: { y: 0.6 }, colors: ["#7c3aed", "#a78bfa", "#f59e0b"] });
-    const cvText = `DEEPIKA A\nEmail: skadeepika@gmail.com\nGitHub: https://github.com/DEEPIKA-A-27\nLinkedIn: https://linkedin.com/in/deepika-a-209704331\n\nSUMMARY: Full Stack Java Developer and AI Enthusiast.\nEDUCATION: B.Tech IT, V.S.B Engineering College (CGPA: 8.38)\nSKILLS: Java, Spring Boot, React, MySQL, Groq API, Node.js.\nEXPERIENCE: Infosys Springboard Full Stack Development Intern (Sep-Nov 2025).`;
-    const blob = new Blob([cvText], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = "Deepika_A_Resume.txt";
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    const link = document.createElement("a");
+    link.href = "/Deepika_A_Resume.pdf";
+    link.download = "Deepika_A_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

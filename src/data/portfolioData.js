@@ -11,7 +11,7 @@ export const portfolioData = {
       cgpa: "8.12"
     },
     location: "Dindigul, Tamil Nadu, India",
-    resumeUrl: "#" // Placeholder or trigger download
+    resumeUrl: "/Deepika_A_Resume.pdf"
   },
 
   about: {
