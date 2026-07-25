@@ -78,7 +78,7 @@ export default function Experience() {
 
                 {/* Tech tags */}
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-[#2a2a3d] light:border-[#e5e3dc]">
-                  {["Spring Boot", "React", "Tailwind CSS", "MySQL", "JWT", "REST APIs"].map((t) => (
+                  {(exp.techTags || ["HTML", "CSS", "JavaScript", "REST APIs"]).map((t) => (
                     <span key={t} className="tech-tag">{t}</span>
                   ))}
                 </div>

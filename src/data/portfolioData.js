@@ -58,6 +58,7 @@ export const portfolioData = {
       company: "Infosys Springboard",
       role: "Full Stack Development Intern",
       period: "Sep 2025 - Nov 2025",
+      techTags: ["Spring Boot", "React", "Tailwind CSS", "MySQL", "JWT", "REST APIs"],
       description: [
         "Developed a full-stack Study Group Finder platform.",
         "Implemented JWT authentication and role-based access control.",
@@ -65,6 +66,32 @@ export const portfolioData = {
         "Integrated MySQL database with JPA and Hibernate for data management.",
         "Developed a modern, responsive UI using React and Tailwind CSS.",
         "Collaborated under Agile development practices, performing sprints and code reviews."
+      ]
+    },
+    {
+      company: "Brainery Spot Technology",
+      role: "Full Stack Web Development Intern",
+      period: "1 Month",
+      techTags: ["HTML", "CSS", "JavaScript", "Node.js", "REST APIs", "MySQL"],
+      description: [
+        "Built and deployed full-stack web applications using modern technologies.",
+        "Developed responsive frontend interfaces with HTML, CSS, and JavaScript.",
+        "Designed and integrated RESTful backend APIs.",
+        "Worked with databases for data storage and retrieval.",
+        "Gained hands-on experience in end-to-end web application development."
+      ]
+    },
+    {
+      company: "Appin Technology",
+      role: "Full Stack Web Development Intern",
+      period: "1 Month",
+      techTags: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "REST APIs"],
+      description: [
+        "Developed full-stack web solutions as part of the internship program.",
+        "Implemented frontend features using HTML, CSS, JavaScript frameworks.",
+        "Created and consumed RESTful APIs for backend communication.",
+        "Collaborated with the development team on real-world client projects.",
+        "Strengthened understanding of the complete software development lifecycle."
       ]
     }
   ],
@@ -74,86 +101,131 @@ export const portfolioData = {
       id: 1,
       title: "AI Debugging Agent",
       featured: true,
-      description: "An AI-powered full-stack application for automated code debugging, analysis, optimization, and learning powered by Llama 3.3 70B via Groq API. It helps developers locate bugs, refactor code, analyze time/space complexity, and prepare for interviews.",
+      description: "An AI-powered full-stack web application for automated code debugging, analysis, optimization, and learning — powered by Groq LLM (Llama 3.3 70B). Supports 10 programming languages and 10 UI languages with a live deployed demo.",
       features: [
-        "AI-Powered Code Analysis & instant explanations",
-        "Interactive Coding Chat Assistant for real-time collaboration",
-        "Automated Code Optimization & refactoring suggestions",
-        "Advanced Bug Prediction & security vulnerability flagging",
-        "Dynamic Flowchart Generation for structural visualization",
-        "Time & Space Complexity estimation & tracking",
-        "Technical Interview Preparation & coding challenge mode",
-        "Generate & Export PDF Reports of detailed bug audits",
-        "Multi-language programming support (Java, JS, Python, C++, SQL)"
+        "AI Code Analysis — syntax errors, logical bugs, and security flaws",
+        "AI Chat Assistant with 7 modes: Chat, Explain, Test Cases, Optimize, Complexity, Bug Predict, Interview",
+        "10 Programming Languages — Java, Python, C++, JS, C#, TypeScript, Go, Rust, Swift, Kotlin",
+        "Code Translation — convert code between any 2 languages",
+        "Flowchart Generator — visual flowchart from code structure",
+        "Debug History — searchable and filterable analysis history",
+        "PDF Reports — download full analysis as PDF",
+        "Dashboard with stats, charts, and recent activity",
+        "Dark / Light Theme & User Settings"
       ],
-      techStack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "Groq API", "JWT"],
-      demoUrl: "https://github.com/DEEPIKA-A-27",
-      githubUrl: "https://github.com/DEEPIKA-A-27"
+      techStack: ["React 18", "Vite", "Tailwind CSS", "Monaco Editor", "Node.js", "Express.js", "MySQL", "Groq API", "JWT"],
+      demoUrl: "https://debugging-agent.vercel.app",
+      githubUrl: "https://github.com/DEEPIKA-A-27/DebuggingAgent"
     },
     {
       id: 2,
       title: "Study Group Finder & Collaboration Platform",
       featured: false,
-      description: "A secure, full-stack platform designed for student peer communities to create, search, and manage study groups. Provides live announcements, group message feeds, course assignments, and robust security controls.",
+      description: "A modern full-stack platform for students to connect with peers in the same courses, form study groups, and collaborate using built-in communication and productivity tools.",
       features: [
-        "Course-wide enrollment & matching",
-        "Dynamic peer discovery & invitations",
-        "Public/private group access privacy scopes",
-        "Real-time text chat feeds & file sharing",
-        "Instant group announcements & notification pings",
-        "JWT-based security authentication & role checking"
+        "JWT-based login/registration with password hashing via Spring Security",
+        "Email-based password reset and session management",
+        "Full user profile management with avatar upload and academic details",
+        "Course browsing, enrollment, and peer tracking",
+        "Create and manage public/private study groups with member approvals",
+        "Real-time chat, group messaging, and direct messaging",
+        "Calendar scheduling with email/push event reminders",
+        "Group calendar integration and study session planner"
       ],
-      techStack: ["React 18", "Tailwind CSS", "Spring Boot", "Spring Security", "JWT", "MySQL"],
-      demoUrl: "https://github.com/DEEPIKA-A-27",
-      githubUrl: "https://github.com/DEEPIKA-A-27"
+      techStack: ["React 18", "Vite", "Tailwind CSS", "Spring Boot 3", "Spring Security", "JWT", "MySQL", "Gmail SMTP"],
+      demoUrl: "https://github.com/DEEPIKA-A-27/Study-Group-Finder",
+      githubUrl: "https://github.com/DEEPIKA-A-27/Study-Group-Finder"
     },
     {
       id: 3,
       title: "Smart Healthcare Appointment Management System",
       featured: false,
-      description: "An online healthcare portal enabling patients to schedule consultation slots with doctors across specializations, and allowing clinics to manage practitioner schedules.",
+      description: "A full-stack web application for managing healthcare appointments, enabling patients to register, browse doctors by specialization, book slots, and track appointment status.",
       features: [
-        "Seamless patient appointment slot booking",
-        "Dynamic status tracking (Pending, Approved, Completed)",
-        "Advanced doctor search filtered by specialty & availability",
-        "Secure patient/admin authentication and session handling",
-        "Client and server-side data validation",
-        "SQL injection prevention & password encryption using bcrypt"
+        "Patient registration and JWT-based authentication",
+        "Doctor management with specialization and qualification details",
+        "Appointment booking with date, time, and symptoms input",
+        "Dynamic status tracking — Pending, Approved, Completed, Cancelled",
+        "Doctor search and filter by specialization",
+        "Password hashing with bcrypt and SQL injection prevention",
+        "RESTful API with full CRUD for patients, doctors, and appointments",
+        "Responsive frontend with vanilla HTML, CSS, and JavaScript"
       ],
-      techStack: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL", "JWT", "bcrypt"],
-      demoUrl: "https://github.com/DEEPIKA-A-27",
-      githubUrl: "https://github.com/DEEPIKA-A-27"
+      techStack: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "MySQL", "JWT", "bcrypt"],
+      demoUrl: "https://github.com/DEEPIKA-A-27/smart-healthcare-appointment-system",
+      githubUrl: "https://github.com/DEEPIKA-A-27/smart-healthcare-appointment-system"
     },
     {
       id: 4,
       title: "EduPilot AI",
       featured: false,
-      description: "An AI-powered academic dashboard and mentorship engine designed to support personalized learning paths, study schedules, and career guidance for college undergraduates.",
+      description: "An AI-powered educational platform helping students manage study notes, plan sessions, predict career paths, and get real-time academic guidance through an AI assistant.",
       features: [
-        "Rich-text markdown notes management & caching",
-        "Intelligent study planning & calendar scheduling",
-        "Career trajectory prediction based on academic records",
-        "Integrated AI Virtual Mentor bot for course help"
+        "Dashboard with overview of user activities and progress",
+        "Notes management — create, edit, and organize study notes",
+        "Study Planner — schedule and track study sessions",
+        "Career Predictor — AI-driven recommendations based on interests and skills",
+        "AI Assistant — chat interface for academic help and queries",
+        "User profile with full edit capabilities and academic details",
+        "Python AI services with Transformers for intelligent predictions",
+        "MySQL-backed persistence with Node.js and Express REST APIs"
       ],
       techStack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "Python", "Transformers"],
-      demoUrl: "https://github.com/DEEPIKA-A-27",
-      githubUrl: "https://github.com/DEEPIKA-A-27"
+      demoUrl: "https://github.com/DEEPIKA-A-27/EduPilot-AI",
+      githubUrl: "https://github.com/DEEPIKA-A-27/EduPilot-AI"
     },
     {
       id: 5,
       title: "Smart Expense Tracker",
       featured: false,
-      description: "A personal finance tool that tracks earnings, categorizes expenses, generates budget limits, and provides visual charts representing financial analytics.",
+      description: "A personal finance tool that tracks earnings and expenses, categorizes spending, sets budget limits, and displays interactive financial analytics charts.",
       features: [
-        "Flexible expense categorization & merchant tagging",
+        "Flexible expense categorization and merchant tagging",
         "Real-time budget restriction alerts",
         "Interactive graphical analytics dashboards",
-        "User account authentication & data privacy",
-        "Exportable monthly financial transaction summaries"
+        "User authentication and data privacy",
+        "Exportable monthly financial transaction summaries",
+        "Full-stack with Java backend and JavaScript frontend"
       ],
-      techStack: ["React.js", "Node.js", "Express.js", "MySQL", "JavaScript"],
-      demoUrl: "https://github.com/DEEPIKA-A-27",
-      githubUrl: "https://github.com/DEEPIKA-A-27"
+      techStack: ["JavaScript", "HTML", "CSS", "Java", "Node.js", "MySQL"],
+      demoUrl: "https://github.com/DEEPIKA-A-27/smart-expense-tracker",
+      githubUrl: "https://github.com/DEEPIKA-A-27/smart-expense-tracker"
+    },
+    {
+      id: 6,
+      title: "Guess the Number Game",
+      featured: false,
+      description: "A console-based Java game where the program randomly selects a number between 1 and 100. The player guesses until they get it right, with high/low hints after each attempt.",
+      features: [
+        "Random number generation between 1 and 100",
+        "Interactive console input with real-time hints",
+        "High / Low feedback after every guess",
+        "Tracks and displays total number of attempts",
+        "Clean Java OOP design, no external dependencies"
+      ],
+      techStack: ["Java"],
+      demoUrl: "https://github.com/DEEPIKA-A-27/GuessGame-",
+      githubUrl: "https://github.com/DEEPIKA-A-27/GuessGame-"
+    },
+    
+    {
+      id: 7,
+      title: "Portfolio Website",
+      featured: false,
+      description: "This very portfolio — a modern, editorial-style React application with a vertical sidebar navigation, violet-themed design, animated sections, and full dark/light mode support.",
+      features: [
+        "Editorial sidebar navigation with section spy scroll tracking",
+        "Animated Hero with typewriter role cycling and floating stat badges",
+        "Interactive Skills tab panel with per-category color coding",
+        "Filterable Projects grid with expandable feature lists",
+        "Animated About section with spring-physics number counters",
+        "Certifications with marquee issuer strip and hover accents",
+        "Contact form with validation and confetti on submit",
+        "Full dark / light theme toggle with localStorage persistence"
+      ],
+      techStack: ["React 19", "Vite", "Tailwind CSS v4", "Framer Motion", "Lucide React"],
+      demoUrl: "https://github.com/DEEPIKA-A-27/Portfolio",
+      githubUrl: "https://github.com/DEEPIKA-A-27/Portfolio"
     }
   ],
 
