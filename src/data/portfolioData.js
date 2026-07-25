@@ -1,6 +1,6 @@
 export const portfolioData = {
   personalDetails: {
-    name: "Deepika A",
+    name: "DEEPIKA A",
     title: "Full Stack Java Developer | AI Enthusiast | Software Engineer",
     email: "skadeepika@gmail.com",
     github: "https://github.com/DEEPIKA-A-27",
@@ -8,7 +8,7 @@ export const portfolioData = {
     education: {
       degree: "B.Tech Information Technology",
       college: "V.S.B Engineering College",
-      cgpa: "8.38"
+      cgpa: "8.12"
     },
     location: "Dindigul, Tamil Nadu, India",
     resumeUrl: "#" // Placeholder or trigger download
@@ -19,29 +19,29 @@ export const portfolioData = {
     stats: [
       { id: "projects", label: "Projects Completed", value: "8+", number: 8 },
       { id: "leetcode", label: "LeetCode Solved", value: "100+", number: 100 },
-      { id: "tech", label: "Technologies Mastered", value: "20+", number: 20 },
+      { id: "tech", label: "Technologies Mastered", value: "5+", number: 5 },
       { id: "certs", label: "Certifications", value: "10+", number: 10 },
       { id: "badges", label: "Badges Earned", value: "15+", number: 15 },
-      { id: "internship", label: "Internships", value: "1", number: 1 }
+      { id: "internship", label: "Internships", value: "3", number: 3 }
     ]
   },
 
   skills: [
     {
-      category: "Languages",
-      items: ["Java", "JavaScript", "Python", "SQL", "HTML", "CSS"]
+      category: "Programming Languages",
+      items: ["Java","Python"]
     },
     {
-      category: "Frontend",
-      items: ["React", "Tailwind CSS", "Bootstrap", "Vite"]
+      category: "Frontend WebTechnologies",
+      items: ["React", "Tailwind CSS", "Bootstrap", "Vite","HTML","Javascript"]
     },
     {
-      category: "Backend",
+      category: "Backend WebTechnologies",
       items: ["Spring Boot", "Node.js", "Express.js", "REST APIs"]
     },
     {
       category: "Database",
-      items: ["MySQL"]
+      items: ["MySQL","MongoDB"]
     },
     {
       category: "AI",
@@ -169,7 +169,7 @@ export const portfolioData = {
 
   achievements: [
     { title: "Projects Built", value: "8+", subtext: "Full-stack & AI applications" },
-    { title: "Academic Stat", value: "8.38", subtext: "Cumulative CGPA at V.S.B" },
+    { title: "Academic Stat", value: "8.12", subtext: "Cumulative CGPA at V.S.B" },
     { title: "Coding Skills", value: "100+", subtext: "Data structure challenges solved" },
     { title: "Certifications", value: "10+", subtext: "Professional certificates earned" },
     { title: "Badges", value: "15+", subtext: "Trailhead, AWS & platform badges" }
